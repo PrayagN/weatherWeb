@@ -45,7 +45,7 @@ function App() {
     } else if (details === "Rain") {
       return "../src/assets/rain.avif";
     } else if (details === "Clouds") {
-      return "../src/assets/clouds.avif";
+      return "../public/clouds.avif";
     } else if (details === "Haze") {
       return "../src/assets/haze.avif";
     } else if (details === "Mist") {
