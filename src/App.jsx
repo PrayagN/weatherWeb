@@ -45,7 +45,7 @@ function App() {
     } else if (details === "Rain") {
       return "../src/assets/rain.avif";
     } else if (details === "Clouds") {
-      return "../public/clouds.avif";
+      return "https://i.pinimg.com/originals/47/76/e1/4776e163cc466942ab43871f39630eba.gif";
     } else if (details === "Haze") {
       return "../src/assets/haze.avif";
     } else if (details === "Mist") {
