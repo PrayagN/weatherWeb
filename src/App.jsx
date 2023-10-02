@@ -9,6 +9,10 @@ import TopButton from "./components/TopButton";
 import getFormattedWeatherData from "./services/weatherServices";
 import clear from './assets/clear.avif'
 import haze from './assets/haze.avif'
+import rain from './assets/rain.avif';
+import clouds from './assets/clouds.avif';
+import mist from './assets/mist.jpg';
+
 // import { DateTime } from "luxon";
 function App() {
   const [query, setQuery] = useState({ q: "berlin" });
@@ -45,13 +49,13 @@ function App() {
     if (details === "Clear") {
       return clear;
     } else if (details === "Rain") {
-      return "../src/assets/rain.avif";
+      return rain;
     } else if (details === "Clouds") {
-      return "https://i.pinimg.com/originals/47/76/e1/4776e163cc466942ab43871f39630eba.gif";
+      return clouds;
     } else if (details === "Haze") {
       return haze
     } else if (details === "Mist") {
-      return "../src/assets/mist.jpg";
+      return mist;
     } else {
       return "https://i.pinimg.com/originals/47/76/e1/4776e163cc466942ab43871f39630eba.gif";
     }
