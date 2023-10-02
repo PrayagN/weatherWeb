@@ -7,6 +7,7 @@ import TemparatureDetails from "./components/TemparatureDetails";
 import TimeAndLocation from "./components/TimeAndLocation";
 import TopButton from "./components/TopButton";
 import getFormattedWeatherData from "./services/weatherServices";
+import clear from '../src/assets/clear.avif'
 // import { DateTime } from "luxon";
 function App() {
   const [query, setQuery] = useState({ q: "berlin" });
@@ -41,7 +42,7 @@ function App() {
     // Check the specific weather conditions and return the appropriate image URLs
     // if (temp <= value) {
     if (details === "Clear") {
-      return "../src/assets/clear.avif";
+      return clear;
     } else if (details === "Rain") {
       return "../src/assets/rain.avif";
     } else if (details === "Clouds") {
